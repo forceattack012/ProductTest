@@ -1,9 +1,14 @@
 ﻿$(document).ready(function () {
     $('#AddData').hide();
+    $('#UpdateData').hide();
 
     $('#BtnAdd').click(function () {
         $('#AddData').toggle();
     });
+    $('#BtnUpdate').click(function () {
+        $('#UpdateData').toggle();
+    });
+
     $('#SubmitAddData').click(function () {
         var GetData = {
             ProductID: $('#ProductID').val(),
@@ -25,4 +30,5 @@
             }
         });
     });
+
 });
