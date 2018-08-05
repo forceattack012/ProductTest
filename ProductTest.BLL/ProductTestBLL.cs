@@ -11,6 +11,7 @@ namespace ProductTest.BLL
 
     public class ProductTestBLL
     {
+<<<<<<< HEAD
         public void SendToDal(ProductTestData product)
         {
             ProductTestDAL pd = new ProductTestDAL();
@@ -20,5 +21,13 @@ namespace ProductTest.BLL
         {
 
         }
+=======
+        public List<ProductTestData> SendToDal(ProductTestData product)
+        {
+            ProductTestDAL pd = new ProductTestDAL();
+            return pd.InsertToDB(product);
+        }
+
+>>>>>>> master
     }
 }

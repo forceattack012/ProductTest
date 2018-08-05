@@ -16,8 +16,12 @@ namespace ProductTest.API.Controllers
         public IHttpActionResult GetData(ProductTestData product)
         {
             ProductTestBLL pb = new ProductTestBLL();
+<<<<<<< HEAD
             pb.SendToDal(product);
             return Ok(product);
+=======
+            return Ok(pb.SendToDal(product));
+>>>>>>> master
         }
     }
 }
